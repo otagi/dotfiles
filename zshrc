@@ -1,6 +1,6 @@
 # Zsh-
 # Path to your oh-my-zsh configuration.
-ZSH="/Users/borisrorsvort/.dotfiles/oh-my-zsh"
+ZSH="$HOME/.dotfiles/oh-my-zsh"
 
 # Autocomplete
 COMPLETION_WAITING_DOTS="true"
@@ -14,14 +14,14 @@ export NETWORK_ID=508
 
 # Theme
 # Set name of the theme to load.
-# Look in /Users/borisrorsvort/.dotfiles/.oh-my-zsh/themes/
+# Look in $HOME/.dotfiles/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="pure"
 
 # Plugins
-# Plugins can be found in /Users/borisrorsvort/.dotfiles/oh-my-zsh/plugins/
-# Custom plugins may be added to /Users/borisrorsvort/.dotfiles/oh-my-zsh/custom/plugins/
+# Plugins can be found in $HOME/.dotfiles/oh-my-zsh/plugins/
+# Custom plugins may be added to $HOME/.dotfiles/oh-my-zsh/custom/plugins/
 #
 # Which plugins would you like to load?
 # Example format: plugins=(rails git textmate ruby lighthouse)
