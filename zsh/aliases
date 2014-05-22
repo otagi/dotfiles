@@ -1,0 +1,68 @@
+# Handle the fact that this file will be used with multiple OSs
+platform=`uname`
+if [[ $platform == 'Linux' ]]; then
+  alias a='ls -lrth --color'
+elif [[ $platform == 'Darwin' ]]; then
+  alias a='ls -lrthG'
+fi
+
+alias amend="git commit --amend"
+alias asu="cd ~/code/rails/activesupport"
+alias aliases='subl ~/.dotfiles/bash/aliases'
+alias bake='bundle exec rake'
+alias be='bundle exec'
+alias killruby='killall -9 ruby'
+alias rc='rails console'
+alias so='source ~/.dotfiles/bash/aliases'
+
+# Postgres
+alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias stoppostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop'
+
+# Heroku staging
+alias staging-console='heroku run console --remote staging'
+alias staging-tail='heroku logs --tail --remote staging'
+
+# Heroku production
+alias production-console='heroku run console --remote production'
+alias production-tail='heroku logs --tail --remote production'
+
+# Heroku databases utils
+alias db-pull-staging='heroku db:pull --remote staging --confirm `basename $PWD`-staging'
+alias db-pull-production='heroku db:pull --remote production --confirm `basename $PWD`-production'
+alias db-copy-production-to-staging='heroku pgbackups:restore DATABASE `heroku pgbackups:url --remote production` --remote staging  --confirm `basename $PWD`-staging'
+alias db-backup-production='heroku pgbackups:capture --remote production'
+alias db-backups='heroku pgbackups --remote production'
+
+# Legit
+alias up="git up"
+alias sync="up;gp"
+
+# htdoc
+alias wp="cd /Applications/MAMP/htdocs"
+
+# Trustedfamily
+alias dev="ruby ~/scripts/tools.rb"
+alias tp_launch="dev start; tp; up; bundle install; rake db:migrate; tu"
+alias tp="cd ~/Sites/trustedplatform"
+alias tu="unicorn_rails -cconfig/unicorn.rb"
+alias tr="QUEUE=* be rake environment resque:work"
+alias tc="rails c"
+alias ts="subl trustedplatform.sublime-project"
+alias pull_templates="cd tp && cd uploads/template_resources && git pull && cd -"
+alias tcc="cd tcc"
+alias tcu="tcc && unicorn_rails -cconfig/unicorn.rb"
+alias tcrc="tcc && rails c"
+alias tplogs="tail -f -n 500 log/development.log"
+
+# Grunt
+alias gs="grunt serve"
+
+# todos
+alias to='todo'
+alias lto='list-todo'
+
+alias rspec="nocorrect rspec"
+alias spring="nocorrect spring"
+
+alias flushdns='dscacheutil -flushcache'
