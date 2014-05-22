@@ -11,6 +11,10 @@ end
 desc "install the dot files into user's home directory"
 task :install do
   replace_all = true
+  # update submodules
+  system %Q{git submodule update --init --recursive"}
+
+  # link all the files
   Dir['*'].each do |file|
     next if %w[Rakefile README LICENSE id_dsa.pub].include? file
 
