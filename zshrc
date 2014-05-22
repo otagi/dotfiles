@@ -1,6 +1,6 @@
 # Zsh-
 # Path to your oh-my-zsh configuration.
-ZSH="/Users/borisrorsvort/.dotfiles/.oh-my-zsh"
+ZSH="/Users/borisrorsvort/.dotfiles/oh-my-zsh"
 
 # Autocomplete
 COMPLETION_WAITING_DOTS="true"
@@ -20,8 +20,8 @@ export NETWORK_ID=508
 ZSH_THEME="pure"
 
 # Plugins
-# Plugins can be found in /Users/borisrorsvort/.dotfiles/.oh-my-zsh/plugins/
-# Custom plugins may be added to /Users/borisrorsvort/.dotfiles/.oh-my-zsh/custom/plugins/
+# Plugins can be found in /Users/borisrorsvort/.dotfiles/oh-my-zsh/plugins/
+# Custom plugins may be added to /Users/borisrorsvort/.dotfiles/oh-my-zsh/custom/plugins/
 #
 # Which plugins would you like to load?
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -36,7 +36,7 @@ unsetopt correct
 
 # Aliases/functions
 source $HOME/.dotfiles/zsh/aliases
-source $HOME/.dotfiles/zsh/function
+source $HOME/.dotfiles/zsh/functions
 
 # box
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
