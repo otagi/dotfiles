@@ -38,8 +38,10 @@ unsetopt correct
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 
-# box
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+# boxen
+if [[ -f /opt/boxen/env.sh ]]; then
+ source /opt/boxen/env.sh
+fi
 
 # Rbenv
 export PATH="$HOME/.rbenv/bin:/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/share/npm/bin:$PATH"
