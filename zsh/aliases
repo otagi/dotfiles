@@ -8,12 +8,12 @@ fi
 
 alias amend="git commit --amend"
 alias asu="cd ~/code/rails/activesupport"
-alias aliases='subl ~/.dotfiles/bash/aliases'
+alias aliases='subl ~/.dotfiles/zsh/aliases'
 alias bake='bundle exec rake'
 alias be='bundle exec'
 alias killruby='killall -9 ruby'
 alias rc='rails console'
-alias so='source ~/.dotfiles/bash/aliases'
+alias so='source ~/.dotfiles/zsh/aliases'
 
 # Postgres
 alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
@@ -37,6 +37,15 @@ alias db-backups='heroku pgbackups --remote production'
 # Legit
 alias up="git up"
 alias sync="up;gp"
+alias gs="tig status"
+alias fs="git flow feature start"
+alias ff="git flow feature finish"
+alias fp="git flow feature publish"
+alias gch="git flow feature checkout"
+alias branches="git branch -l"
+alias bd="git branch -D"
+alias checkout="git branch checkout"
+alias develop="g checkout develop"
 
 # htdoc
 alias wp="cd /Applications/MAMP/htdocs"
@@ -47,16 +56,16 @@ alias tp_launch="dev start; tp; up; bundle install; rake db:migrate; tu"
 alias tp="cd ~/Sites/trustedplatform"
 alias tu="unicorn_rails -cconfig/unicorn.rb"
 alias tr="QUEUE=* be rake environment resque:work"
-alias tc="rails c"
 alias ts="subl trustedplatform.sublime-project"
-alias pull_templates="cd tp && cd uploads/template_resources && git pull && cd -"
-alias tcc="cd tcc"
+alias pull_templates="tp && cd uploads/template_resources && git pull && cd -"
+alias tpt="cd uploads/template_resources"
+alias tcc="cd ~/Sites/trustedcommandcenter"
 alias tcu="tcc && unicorn_rails -cconfig/unicorn.rb"
 alias tcrc="tcc && rails c"
 alias tplogs="tail -f -n 500 log/development.log"
 
 # Grunt
-alias gs="grunt serve"
+alias serve="grunt serve"
 
 # todos
 alias to='todo'
@@ -66,3 +75,7 @@ alias rspec="nocorrect rspec"
 alias spring="nocorrect spring"
 
 alias flushdns='dscacheutil -flushcache'
+
+# jenkins
+
+alias testit='tp; script/tp_jenkins;'

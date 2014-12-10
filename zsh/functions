@@ -8,17 +8,17 @@ function g {
 compdef g=git
 
 function todo {
-  subl ~/Dropbox/todos/$1.txt
+  subl ~/Dropbox\ \(Personal\)/todos/$1.txt
 }
 
 function list-todo {
-  for i in ~/Dropbox/todos/*; do echo $(basename $i | cut -f 1 -d '.') ":" $(wc -l < $i); done
+  for i in ~/Dropbox\ \(Personal\)/todos/*; do echo $(basename $i | cut -f 1 -d '.') ":" $(wc -l < $i); done
 }
 
 function snippet {
-  subl ~/Dropbox/snippets/$1
+  subl ~/Dropbox\ \(Personal\)/snippets/$1
 }
 
 function snippets {
-  for i in ~/Dropbox/snippets/*; do echo $(basename $i); done
+  for i in ~/Dropbox\ \(Personal\)/snippets/*; do echo $(basename $i); done
 }

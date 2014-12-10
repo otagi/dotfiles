@@ -4,7 +4,6 @@
     editor = subl
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
-  editor = subl
 [alias]
     # Add
     ad = add
@@ -77,9 +76,10 @@
 [core]
 	#excludesfile = $HOME/.dotfile/gitignore
     excludesfile = /opt/boxen/config/git/gitignore
+	editor = vim -f
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -93,3 +93,7 @@
   rebase = true
 [help]
   autocorrect = 1
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f

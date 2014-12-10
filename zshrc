@@ -6,7 +6,8 @@ ZSH="$HOME/.dotfiles/oh-my-zsh"
 COMPLETION_WAITING_DOTS="true"
 
 # Editor
-EDITOR="subl"
+export EDITOR="subl"
+export BUNDLER_EDITOR="subl"
 
 # TP
 export PROFILE_ID=60507
