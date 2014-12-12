@@ -14,6 +14,7 @@ alias be='bundle exec'
 alias killruby='killall -9 ruby'
 alias rc='rails console'
 alias so='source ~/.dotfiles/zsh/aliases'
+alias dotfiles='subl ~/.dotfiles/'
 
 # Postgres
 alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
@@ -57,8 +58,8 @@ alias tp="cd ~/Sites/trustedplatform"
 alias tu="unicorn_rails -cconfig/unicorn.rb"
 alias tr="QUEUE=* be rake environment resque:work"
 alias ts="subl trustedplatform.sublime-project"
-alias pull_templates="tp && cd uploads/template_resources && git pull && cd -"
-alias tpt="cd uploads/template_resources"
+alias pull_templates="tp && tpt && up"
+alias tpt="tp && cd uploads/template_resources"
 alias tcc="cd ~/Sites/trustedcommandcenter"
 alias tcu="tcc && unicorn_rails -cconfig/unicorn.rb"
 alias tcrc="tcc && rails c"
@@ -77,5 +78,4 @@ alias spring="nocorrect spring"
 alias flushdns='dscacheutil -flushcache'
 
 # jenkins
-
 alias testit='tp; script/tp_jenkins;'
