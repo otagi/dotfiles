@@ -4,7 +4,7 @@
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
   excludesfile = ~/.gitignore
-  editor = subl
+  editor = vim
 [alias]
   # Add
   ad = add

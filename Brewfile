@@ -72,7 +72,8 @@ brew cask install postgres
 # Common tools
 echo Installing common tools ...
 
-brew cask install --appdir="/Applications" sublime-text
+brew tap caskroom/versions
+brew cask install --appdir="/Applications" sublime-text3
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" google-drive
