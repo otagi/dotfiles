@@ -102,8 +102,6 @@ echo Installing misc stuff ...
 brew cask install --appdir="/Applications" steam
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" spotify
-brew cask install --appdir="/Applications" spotify-notifications
-
 
 # cleanup
 echo Upgrade and Cleanup brew
