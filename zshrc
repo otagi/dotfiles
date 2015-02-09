@@ -19,6 +19,10 @@ export BUNDLER_EDITOR="subl"
 export PROFILE_ID=60507
 export NETWORK_ID=508
 
+# MAMP
+export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.2/bin
+export PATH="$MAMP_PHP:$PATH"
+
 # Theme
 # Set name of the theme to load.
 # Look in $HOME/.dotfiles/.oh-my-zsh/themes/
