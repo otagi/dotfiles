@@ -8,7 +8,7 @@ task :backup do
   system %Q{zip -r ~/backup-dotfiles/backup-#{Time.now}.zip #{files}}
 end
 
-desc "install the dot files into user's home directory"
+desc "install the brew packages and deps"
 task :update_or_install_brew_deps do
   update_or_install_brew_deps
 end
