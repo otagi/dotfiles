@@ -8,7 +8,7 @@ function g {
 compdef g=git
 
 function todo {
-  atom ~/Dropbox\ \(Personal\)/todos/$1.txt
+  atom ~/Dropbox\ \(Personal\)/todos/$1.todo
 }
 
 function list-todo {
