@@ -126,3 +126,15 @@ def update_or_install_brew_deps
 
   system 'sh Brewfile'
 end
+
+desc 'install basic gems'
+task :install_basic_gems do
+  install_basic_gems
+end
+
+def install_basic_gems
+  gems = %w(bundler awesome_print rbenv-rehash)
+  gems.each do |gem|
+    system "gem install #{gem}"
+  end
+end
