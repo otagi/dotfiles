@@ -86,21 +86,16 @@ echo Installing common tools ...
 echo "-------------------------------"
 
 brew tap caskroom/versions
-brew cask install --appdir="/Applications" sublime-text3
-brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" google-drive
-brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" hipchat
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" macdown
 brew cask install --appdir="/Applications" onepassword
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" transmit
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" sourcetree
 
 # Tp stuff
