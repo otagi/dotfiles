@@ -2,7 +2,6 @@
 require 'irb/completion'
 require 'irb/ext/save-history'
 require "awesome_print"
-ap object, options = {}
 
 
 IRB.conf[:SAVE_HISTORY] = 1000
