@@ -33,6 +33,7 @@ brew install pkg-config
 brew install tig
 brew install webkit2png
 brew install cmatrix
+brew install fortune
 
 # medias
 echo "-------------------------------"

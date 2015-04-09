@@ -95,9 +95,15 @@ task :install do
   puts '================================='
   puts 'Install atom config and packages'
   puts '================================='
-
-  # Install atom config and packages
   install_atom_config_and_packages
+
+  puts '================================='
+  puts 'Install latest ruby versions'
+  puts '================================='
+  system 'rbenv install 2.2.0'
+  system 'rbenv global 2.2.0'
+
+  install_basic_gems
 end
 
 def replace_file(file)
@@ -133,7 +139,11 @@ task :install_basic_gems do
 end
 
 def install_basic_gems
-  gems = %w(bundler awesome_print rbenv-rehash smusher)
+  puts '================================='
+  puts 'Install basic gems'
+  puts '================================='
+
+  gems = %w(bundler awesome_print rbenv-rehash smusher pry)
   gems.each do |gem|
     system "gem install #{gem}"
   end
