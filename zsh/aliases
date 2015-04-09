@@ -7,7 +7,6 @@ elif [[ $platform == 'Darwin' ]]; then
 fi
 
 alias amend="git commit --amend"
-alias asu="cd ~/code/rails/activesupport"
 alias aliases='atom ~/.dotfiles/zsh/aliases'
 alias bake='bundle exec rake'
 alias be='bundle exec'
@@ -52,7 +51,7 @@ alias develop="g checkout develop"
 alias wp="cd /Applications/MAMP/htdocs"
 
 # Trustedfamily
-alias dev="ruby ~/scripts/tools.rb"
+alias dev="ruby ~/.dotfiles/dev_scripts/tools.rb"
 alias tp_launch="dev start; tp; up; bundle install; rake db:migrate; tu"
 alias tp="cd ~/Sites/trustedplatform"
 alias tu="unicorn_rails -cconfig/unicorn.rb"

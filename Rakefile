@@ -133,7 +133,7 @@ task :install_basic_gems do
 end
 
 def install_basic_gems
-  gems = %w(bundler awesome_print rbenv-rehash)
+  gems = %w(bundler awesome_print rbenv-rehash smusher)
   gems.each do |gem|
     system "gem install #{gem}"
   end

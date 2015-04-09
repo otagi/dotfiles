@@ -3,10 +3,14 @@
     userId: "d873afba-9978-f1e8-8be8-d03d4eb3fc34"
   welcome:
     showOnStartup: false
-  core: {}
+  core:
+    disabledPackages: [
+      "autocomplete-ruby"
+    ]
   editor:
     invisibles: {}
   linter: {}
   react: {}
   "linter-rubocop":
     rubocopExecutablePath: "/Users/borisrorsvort/.rbenv/versions/2.1.1/bin/rubocop"
+  "autocomplete-plus": {}
