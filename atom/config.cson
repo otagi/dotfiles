@@ -14,3 +14,5 @@
   "linter-rubocop":
     rubocopExecutablePath: "/Users/borisrorsvort/.rbenv/versions/2.1.1/bin/rubocop"
   "autocomplete-plus": {}
+  "grunt-runner": {}
+  "tree-view": {}

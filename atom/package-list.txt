@@ -1,10 +1,11 @@
+atom-bootstrap3@1.2.0
 atom-css-comb@0.6.4
 atom-erb@0.1.0
 atom-handlebars@0.4.0
+atom-package-example@0.0.0
 atom-pair@1.1.4
 autocomplete-css@0.6.0
-autocomplete-paths@1.0.2
-autocomplete-plus@2.8.0
+autocomplete-plus@2.10.0
 autocomplete-plus-async@0.22.0
 autocomplete-ruby@0.1.0
 autocomplete-snippets@1.2.0
@@ -13,7 +14,6 @@ change-case@0.5.1
 color-picker@1.6.0
 command-logger@0.22.0
 cucumber-step@0.1.2
-dash@1.1.0
 ember-cli-helper@0.7.2
 ember-snippets@1.0.0
 emmet@2.3.6
@@ -21,10 +21,11 @@ envy-theme@0.1.1
 erb-snippets@0.5.0
 file-icons@1.5.3
 flatland-dark-ui@0.2.3
-fuzzy-finder-plus@1.4.0
 git-plus@4.4.10
+grunt-runner@0.8.0
 highlight-css-color@1.3.0
 jquery-snippets@0.4.0
+js-patterns-atom-snippets@0.2.1
 language-gherkin@1.0.1
 language-haml@0.17.0
 language-jsx@0.1.4
