@@ -16,7 +16,6 @@ command-logger@0.22.0
 cucumber-step@0.1.2
 ember-cli-helper@0.7.2
 ember-snippets@1.0.0
-emmet@2.3.6
 envy-theme@0.1.1
 erb-snippets@0.5.0
 file-icons@1.5.3
@@ -35,6 +34,7 @@ linter-jshint@0.1.1
 linter-jsxhint@0.1.1
 linter-rubocop@0.2.2
 linter-ruby@0.1.4
+oblique-strategies@0.1.2
 outlander-syntax@1.0.1
 react@0.11.1
 spacegray-dark-syntax@0.2.0
