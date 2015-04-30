@@ -16,4 +16,5 @@
   "autocomplete-plus": {}
   "grunt-runner": {}
   "tree-view": {}
-  "oblique-strategies": {}
+  "oblique-strategies":
+    showAfterInactivitySeconds: 60

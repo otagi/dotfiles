@@ -22,3 +22,7 @@ function snippet {
 function snippets {
   for i in ~/Dropbox\ \(Personal\)/snippets/*; do echo $(basename $i); done
 }
+
+function gifit {
+  ruby ~/.dotfiles/dev_scripts/screengif/screengif.rb --input $1 --output $2
+}

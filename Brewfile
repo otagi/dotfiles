@@ -58,6 +58,7 @@ brew install media-info
 brew install x264
 brew install xvid
 brew install xz
+brew install gifsicle
 
 # languages
 echo "-------------------------------"

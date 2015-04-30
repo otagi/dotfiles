@@ -143,7 +143,7 @@ def install_basic_gems
   puts 'Install basic gems'
   puts '================================='
 
-  gems = %w(bundler awesome_print rbenv-rehash smusher pry)
+  gems = %w(bundler awesome_print rbenv-rehash smusher pry rmagick git-flow)
   gems.each do |gem|
     system "gem install #{gem}"
   end
