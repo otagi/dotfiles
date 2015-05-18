@@ -8,19 +8,19 @@ function g {
 compdef g=git
 
 function todo {
-  atom ~/Dropbox\ \(Personal\)/todos/$1.todo
+  atom ~/Dropbox\ \(Personnelle\)/todos/$1.todo
 }
 
 function list-todo {
-  for i in ~/Dropbox\ \(Personal\)/todos/*; do echo $(basename $i | cut -f 1 -d '.') ":" $(wc -l < $i); done
+  for i in ~/Dropbox\ \(Personnelle\)/todos/*; do echo $(basename $i | cut -f 1 -d '.') ":" $(wc -l < $i); done
 }
 
 function snippet {
-  atom ~/Dropbox\ \(Personal\)/snippets/$1
+  atom ~/Dropbox\ \(Personnelle\)/snippets/$1
 }
 
 function snippets {
-  for i in ~/Dropbox\ \(Personal\)/snippets/*; do echo $(basename $i); done
+  for i in ~/Dropbox\ \(Personnelle\)/snippets/*; do echo $(basename $i); done
 }
 
 function gifit {

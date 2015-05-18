@@ -14,6 +14,7 @@ alias killruby='killall -9 ruby'
 alias rc='rails console'
 alias so='source ~/.dotfiles/zsh/aliases'
 alias dotfiles='atom ~/.dotfiles/'
+alias fs='foreman start'
 
 # Postgres
 alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
@@ -38,30 +39,18 @@ alias db-backups='heroku pgbackups --remote production'
 alias up="git up"
 alias sync="up;gp"
 alias gs="tig status"
-alias fs="git flow feature start"
-alias ff="git flow feature finish"
-alias fp="git flow feature publish"
-alias gch="git flow feature checkout"
 alias branches="git branch -l"
 alias bd="git branch -D"
 alias checkout="git branch checkout"
 alias develop="g checkout develop"
+alias master="g checkout master"
 
 # htdoc
 alias wp="cd /Applications/MAMP/htdocs"
 
-# Trustedfamily
+# Dev
 alias dev="ruby ~/.dotfiles/dev_scripts/tools.rb"
-alias tp_launch="dev start; tp; up; bundle install; rake db:migrate; tu"
-alias tp="cd ~/Sites/trustedplatform"
-alias tu="unicorn_rails -cconfig/unicorn.rb"
-alias tr="QUEUE=* be rake environment resque:work"
-alias pull_templates="tp && tpt && up"
-alias tpt="tp && cd uploads/template_resources"
-alias tcc="cd ~/Sites/trustedcommandcenter"
-alias tcu="tcc && unicorn_rails -cconfig/unicorn.rb"
-alias tcrc="tcc && rails c"
-alias tplogs="tail -f -n 500 log/development.log"
+alias mmi="cd ~/Sites/my-micro-invest"
 
 # Grunt
 alias serve="grunt serve"

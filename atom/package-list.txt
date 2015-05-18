@@ -2,7 +2,6 @@ atom-bootstrap3@1.2.0
 atom-css-comb@0.6.4
 atom-erb@0.1.0
 atom-handlebars@0.4.0
-atom-package-example@0.0.0
 atom-pair@1.1.4
 autocomplete-css@0.6.0
 autocomplete-plus@2.10.0
@@ -44,4 +43,3 @@ theme-roulette@1.1.0
 turbo-javascript@0.0.8
 underscorejs-snippets@0.2.2
 web-browser@1.4.2
-

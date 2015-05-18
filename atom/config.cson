@@ -9,12 +9,20 @@
     ]
   editor:
     invisibles: {}
-  linter: {}
+  linter:
+    ignoredLinterErrors: [
+      "jshint"
+    ]
   react: {}
   "linter-rubocop":
-    rubocopExecutablePath: "/Users/borisrorsvort/.rbenv/versions/2.1.1/bin/rubocop"
+    rubocopExecutablePath: "/Users/ab2/.rbenv/shims/rubocop"
   "autocomplete-plus": {}
   "grunt-runner": {}
   "tree-view": {}
   "oblique-strategies":
     showAfterInactivitySeconds: 60
+  "linter-jshint": {}
+  "atom-beautify":
+    _analyticsUserId: "0252158c-9432-4627-b72c-fe2cd77d08d4"
+  "css-comb":
+    config: "custom"

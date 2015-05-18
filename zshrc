@@ -15,10 +15,6 @@ SAVEHIST=20000
 export EDITOR="subl"
 export BUNDLER_EDITOR="subl"
 
-# TP
-export PROFILE_ID=60507
-export NETWORK_ID=508
-
 # MAMP
 export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.2/bin
 export PATH="$MAMP_PHP:$PATH"
@@ -55,7 +51,7 @@ export PATH="$HOME/.rbenv/bin:/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/local/sbi
 eval "$(rbenv init -)"
 
 # Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/";
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
