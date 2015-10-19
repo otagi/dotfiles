@@ -12,8 +12,8 @@ SAVEHIST=20000
 
 
 # Editor
-export EDITOR="subl"
-export BUNDLER_EDITOR="subl"
+export EDITOR="atom"
+export BUNDLER_EDITOR="atom"
 
 # MAMP
 export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.2/bin
@@ -32,14 +32,15 @@ ZSH_THEME="pure"
 #
 # Which plugins would you like to load?
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ant history-substring-search z zsh-syntax-highlighting git brew bundler gem git-flow history-substring-search osx rails ruby ssh-agent nyan cap zeus boris)
-
-# Oh My Zsh
-source $ZSH/oh-my-zsh.sh
+plugins=(atom ant z zsh-syntax-highlighting git brew bundler gem git-flow history-substring-search osx rails ruby ssh-agent nyan cap zeus boris k)
 
 # Options
 unsetopt correct_all
 unsetopt correct
+
+# Oh My Zsh
+source $ZSH/oh-my-zsh.sh
+source $HOME/.dotfiles/dev_scripts/k.sh
 
 # Aliases/functions
 source $HOME/.dotfiles/zsh/aliases
@@ -52,6 +53,7 @@ eval "$(rbenv init -)"
 
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/";
+export GOPATH=$PATH:/usr/local/opt/go/libexec/bin
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"

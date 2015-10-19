@@ -51,6 +51,7 @@ alias wp="cd /Applications/MAMP/htdocs"
 # Dev
 alias dev="ruby ~/.dotfiles/dev_scripts/tools.rb"
 alias mmi="cd ~/Sites/my-micro-invest"
+alias mmi_reset="rake db:drop db:create; mysql -p mmi -uroot --password="" < ~/Sites/Dump/mmi_latest.sql"
 
 # Grunt
 alias serve="grunt serve"
@@ -66,3 +67,5 @@ alias flushdns='dscacheutil -flushcache'
 
 # jenkins
 alias testit='tp; script/tp_jenkins;'
+
+alias dir="ls -R | grep ":" | sed -e 's/://' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"

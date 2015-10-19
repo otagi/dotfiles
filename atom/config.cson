@@ -6,16 +6,35 @@
   core:
     disabledPackages: [
       "autocomplete-ruby"
+      "linter-jsxhint"
+      "theme-roulette"
+      "language-jsx"
+      "atom-erb"
+      "notebook"
+      "nuclide-flow"
+      "nuclide-hack"
+      "nuclide-hg-repository"
+      "nuclide-installer"
+      "nuclide-language-hack"
+      "nuclide-click-to-symbol"
     ]
+    projectHome: "/Users/boris/Sites"
   editor:
     invisibles: {}
+    fontSize: 18
+    fontFamily: "Hack"
+    showIndentGuide: true
   linter:
     ignoredLinterErrors: [
       "jshint"
     ]
+    subtleLinterErrors: [
+      "rubocop"
+    ]
   react: {}
   "linter-rubocop":
-    rubocopExecutablePath: "/Users/ab2/.rbenv/shims/rubocop"
+    rubocopExecutablePath: "/Users/boris/.rbenv/shims/rubocop"
+    executablePath: "/Users/boris/.rbenv/shims/rubocop"
   "autocomplete-plus": {}
   "grunt-runner": {}
   "tree-view": {}
@@ -26,3 +45,10 @@
     _analyticsUserId: "0252158c-9432-4627-b72c-fe2cd77d08d4"
   "css-comb":
     config: "custom"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  nuclide:
+    remoteProjectsConfig: []
+  "linter-reek":
+    executablePath: "/Users/boris/.rbenv/versions/2.2.0/bin/reek"
+  "markdown-writer": {}
