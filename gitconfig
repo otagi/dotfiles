@@ -1,6 +1,6 @@
 [user]
-  name = Boris Rorsvort
-  email = boris.rorsvort@gmail.com
+  name = Tiago Mendes-Costa
+  email = tiago@mendes-costa.net
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
   excludesfile = ~/.gitignore
@@ -81,7 +81,7 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 [github]
-  user = borisrorsvort
+  user = otagi
 [gh]
   protocol = https
 [difftool "sourcetree"]

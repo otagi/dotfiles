@@ -68,7 +68,7 @@ echo "-------------------------------"
 brew install node
 brew install ruby-build
 brew install ruby-install
-brew install python
+# brew install python
 
 # databases
 echo "-------------------------------"
@@ -88,17 +88,27 @@ echo Installing common tools ...
 echo "-------------------------------"
 
 brew tap caskroom/versions
+brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" atom
+brew cask install --appdir="/Applications" dash
+brew cask install --appdir="/Applications" coconutbattery
 brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" google-drive
+brew cask install --appdir="/Applications" github-desktop
 brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" iterm2
-brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" imageoptim
+brew cask install --appdir="/Applications" marked
 brew cask install --appdir="/Applications" onepassword
+brew cask install --appdir="/Applications" paparazzi
+brew cask install --appdir="/Applications" psequel
+brew cask install --appdir="/Applications" rowanj-gitx
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" textmate
 brew cask install --appdir="/Applications" transmit
-brew cask install --appdir="/Applications" sourcetree
+brew cask install --appdir="/Applications" sequel-pro
+brew cask install --appdir="/Applications" skype
+brew cask install --appdir="/Applications" superduper
 
 # Tp stuff
 echo "-------------------------------"
@@ -107,15 +117,6 @@ echo "-------------------------------"
 
 brew cask install xquartz
 brew cask install suspicious-package
-
-# Misc
-echo "-------------------------------"
-echo Installing misc stuff ...
-echo "-------------------------------"
-
-brew cask install --appdir="/Applications" steam
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" spotify
 
 # cleanup
 echo "-------------------------------"

@@ -100,8 +100,8 @@ task :install do
   puts '================================='
   puts 'Install latest ruby versions'
   puts '================================='
-  system 'rbenv install 2.2.0'
-  system 'rbenv global 2.2.0'
+  system 'rbenv install 2.2.3'
+  system 'rbenv global 2.2.3'
 
   install_basic_gems
 end
@@ -143,7 +143,7 @@ def install_basic_gems
   puts 'Install basic gems'
   puts '================================='
 
-  gems = %w(bundler awesome_print rbenv-rehash smusher pry rmagick git-flow)
+  gems = %w(bundler awesome_print rbenv-rehash smusher pry rmagick git-flow powder)
   gems.each do |gem|
     system "gem install #{gem}"
   end

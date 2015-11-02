@@ -18,11 +18,11 @@
       "nuclide-language-hack"
       "nuclide-click-to-symbol"
     ]
-    projectHome: "/Users/boris/Sites"
+    projectHome: "/Users/tiago/Projets"
   editor:
     invisibles: {}
     fontSize: 18
-    fontFamily: "Hack"
+    fontFamily: "Menlo"
     showIndentGuide: true
   linter:
     ignoredLinterErrors: [
@@ -33,8 +33,8 @@
     ]
   react: {}
   "linter-rubocop":
-    rubocopExecutablePath: "/Users/boris/.rbenv/shims/rubocop"
-    executablePath: "/Users/boris/.rbenv/shims/rubocop"
+    rubocopExecutablePath: "/Users/tiago/.rbenv/shims/rubocop"
+    executablePath: "/Users/tiago/.rbenv/shims/rubocop"
   "autocomplete-plus": {}
   "grunt-runner": {}
   "tree-view": {}
@@ -50,5 +50,5 @@
   nuclide:
     remoteProjectsConfig: []
   "linter-reek":
-    executablePath: "/Users/boris/.rbenv/versions/2.2.0/bin/reek"
+    executablePath: "/Users/tiago/.rbenv/versions/2.2.0/bin/reek"
   "markdown-writer": {}
